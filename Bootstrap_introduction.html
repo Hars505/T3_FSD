@@ -46,9 +46,16 @@
 
     Bootstrap Utility Classes:
 
-    1> spacing - margin(m) , padding(p)
+    1> spacing -  margin(m) , 
+                  padding(p)
 
-    2> side - top(t), bottom(b), start(s), end(e), x(horizontal), y(vertical)
+    2> side - 
+              top(t), 
+              bottom(b), 
+              start(s), 
+              end(e), 
+              x(horizontal), 
+              y(vertical)
 
     3> size - 0 (0 rem    : Opx),
               1 (0.25 rem : 4px),
@@ -130,24 +137,55 @@
             shadow-lg : for large shadow
             shadow-none : for no shadow
     12> border :
-            border : for border                border-warning : for yellow border                         
-            border-0 : for no border           border-info : for light blue border         
-            border-1 : for border width 1      border-light : for light border                             
-            border-2 : for border width 2      border-dark : for dark border                          
-            border-3 : for border width 3      border-white : for white border        
-            border-4 : for border width 4      rounded : for rounded border       
-            border-5 : for border width 5      rounded-0 : for no rounded border          
-            border-top : for top border        rounded-1 : for small rounded border                
-            border-end : for end border        rounded-2 : for medium rounded border          
-            border-bottom : for bottom border  rounded-3 : for large rounded border             
-            border-start : for start border    rounded-4 : for extra large rounded border                      
-            border-primary : for blue border   rounded-5 : for extra extra large rounded border                        
-            border-secondary : for grey border rounded-circle : for circular border                     
-            border-success : for green border  rounded-pill : for pill shaped border                           
-            border-danger : for red border     rounded-top : for top rounded border                               
+            border : for border                          border-warning : for yellow border                         
+            border-0 : for no border                     border-info : for light blue border         
+            border-1 : for border width 1                border-light : for light border                             
+            border-2 : for border width 2                border-dark : for dark border                          
+            border-3 : for border width 3                border-white : for white border        
+            border-4 : for border width 4                rounded : for rounded border       
+            border-5 : for border width 5                rounded-0 : for no rounded border          
+            border-top : for top border                  rounded-1 : for small rounded border                
+            border-end : for end border                  rounded-2 : for medium rounded border          
+            border-bottom : for bottom border            rounded-3 : for large rounded border             
+            border-start : for start border              rounded-4 : for extra large rounded border                      
+            border-primary : for blue border             rounded-5 : for extra extra large rounded border                        
+            border-secondary : for grey border           rounded-circle : for circular border                     
+            border-success : for green border            rounded-pill : for pill shaped border                           
+            border-danger : for red border               rounded-top : for top rounded border                               
             rounded-end : for end rounded border    
             rounded-bottom : for bottom rounded border      
-            rounded-start : for start rounded border      -->
+            rounded-start : for start rounded border      
+            
+      13> images :
+          image-fluid : for responsive image
+          img-thumbnail : for image with thumbnail style
+          rounded : for rounded image
+          rounded-circle : for circular image
+          float-start : for left aligned image
+          float-end : for right aligned image
+          mx-auto : for center aligned image
+      14> table :
+          table : for basic table
+          table-striped : for striped table
+          table-bordered : for bordered table
+          table-borderless : for borderless table
+          table-hover : for hoverable table
+          table-sm : for small table
+          table-responsive : for responsive table
+          table-light : for light table default
+          table-dark : for dark table
+          table-primary/secondary/.... : for blue/grey/... table
+          
+      15> display:
+          d-flex:
+          d-inline-flex
+          flex-row
+          flex-row-reverse
+          flex-column
+          flex-column-reverse
+          justify-content-start/end/center/between/around/evenly
+          align-item-center/start/center
+          -->
   </head>
   <body style="background-color: bisque">
     <h1 class="text-center">Welcome to Bootstrap</h1>
@@ -197,5 +235,99 @@
         This is an example of Text-white mb-3 text-center fw-bolder
       </p>
     </div>
+    <img
+      src="1.jpg"
+      class="img-fluid img-thumbnail mx-auto rounded-circle border-5 border-primary content"
+      alt="Bootstrap Logo"
+    />
+    <table
+      class="table table-bordered table-striped table-hover table-success mt-5 table-hover table-sm w-50"
+    >
+      <tr>
+        <th>Sr. NO.</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>2</td>  
+        <td>Bob</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Charlie</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Diana</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Edward</td>
+        <td>32</td>
+      </tr>
+    </table>
+    <table
+      class="table border border-5 table-dark table-hover center text-center w-50"
+    >
+      <tr>
+        <th>Sr</th>
+        <th colspan="2">var</th>
+        <th colspan="2">val</th>
+        <th colspan="2">year</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td colspan="2">2.1</td>
+        <td colspan="2">x</td>
+        <td colspan="2">2007</td>
+      </tr>
+      <tr>
+        <th rowspan="2">2</th>
+        <td colspan="4">2.2y</td>
+        <th rowspan="2">2007</th>
+      </tr>
+      <tr>
+        <th colspan="2">36</th>
+        <th colspan="4">z-2008</th>
+      </tr>
+      <tr>
+        <th>3</th>
+        <th colspan="8">47x-2010</th>
+      </tr>
+    </table>
+    <div
+      class="d-flex justify-content-around border border-3 border-dark p-5"
+      style="height: 220px"
+    >
+      <div class="p-5 bg-primary Text-white rounded-circle">I1</div>
+      <div class="p-5 bg-danger Text-white">I2</div>
+      <div class="p-5 bg-success Text-white rounded-3">I3</div>
+      <div class="p-5 bg-warning Text-white rounded-circle">I4</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div
+      class="d-flex justify-content-evenly flex-column border border-3 border-dark p-5 align-item-center"
+      style="height: 620px; width: 500px"
+    >
+      <div class="p-5 bg-primary Text-white rounded-circle text-center">I1</div>
+      <div class="p-5 bg-danger Text-white text-center">I2</div>
+      <div class="p-5 bg-success Text-white rounded-3 text-center">I3</div>
+      <div class="p-5 bg-warning Text-white rounded-circle text-center">
+        I4
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
   </body>
 </html>
